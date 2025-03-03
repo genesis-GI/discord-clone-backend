@@ -5,11 +5,11 @@ import (
 )
 
 func warn(message string) {
-	color.Yellow("[WARN] " + message)
+	color.Yellow("[⚠️ WARN] " + message)
 }
 
 func info(message string) {
-	color.Cyan("[INFO] " + message)
+	color.Cyan("[ℹ️ INFO] " + message)
 }
 
 func neutral(message string) {
@@ -17,13 +17,13 @@ func neutral(message string) {
 }
 
 func success(message string) {
-	color.Green("[SUCCESS] " + message)
+	color.Green("[✓ SUCCESS] " + message)
 }
 
 func errorMesssage(message string) {
-	color.Red("[ERROR] " + message)
+	color.Red("[✗ FAILURE] " + message)
 }
 
 func environment(message string) {
-	color.Magenta("[ENVIRONMENT] " + message)
+	color.Magenta("[⚙ ENVIRONMENT] " + message)
 }
