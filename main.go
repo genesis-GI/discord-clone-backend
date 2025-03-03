@@ -1,7 +1,6 @@
 package main
 
 import (
-    "github.com/fatih/color"
 	"github.com/gin-gonic/gin"
 )
 
@@ -13,7 +12,7 @@ func main(){
         c.String(200, "Hello World!")
     })
     
-
-    color.Green("[SUCCESS] Server running on http://127.0.0.1:8050")
+    environment(gin.ReleaseMode)
+    success("Server running on http://127.0.0.1:8050!")
     r.Run(":8050")
 }
