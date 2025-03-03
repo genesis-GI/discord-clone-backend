@@ -20,6 +20,10 @@ func success(message string) {
 	color.Green("[SUCCESS] " + message)
 }
 
-func errormsg(message string) {
+func errorMesssage(message string) {
 	color.Red("[ERROR] " + message)
+}
+
+func environment(message string) {
+	color.Magenta("[ENVIRONMENT] " + message)
 }
